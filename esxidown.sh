@@ -1,6 +1,9 @@
 #!/bin/sh
 # ESXi 5.1+ host automated asynchronous shutdown script
+# Tested on the free version of VMware ESXi 6
+# Asynchronous shutdown added by Andrey Babak <ababak@gmail.com>, 2016
 
+# Specify log file path
 LOG_FILE=/vmfs/volumes/DL360G7_disk/esxidown.log
 
 exec 2>>${LOG_FILE}
